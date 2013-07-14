@@ -9,3 +9,9 @@
 	.area-actividad{
 		background-color:gray;
 	}
+
+#canvas{
+	height: 400px;
+	width: 400px;
+	background-color: gray;
+}
