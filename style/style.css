@@ -13,5 +13,19 @@
 #canvas{
 	height: 400px;
 	width: 400px;
-	background-color: gray;
+	background-color: white;
+}
+
+.letter {
+	text-align: center;
+	width: 20px;
+	height: 18px;
+	float: left;
+	padding-top: 2px;
+	z-index: 2;
+}
+
+#sopa{
+	width: 400px;
+	height: 400px;
 }
