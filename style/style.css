@@ -1,0 +1,35 @@
+     body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+	footer{
+		text-align:center;
+	}
+	
+	.area-actividad{
+		background-color:gray;
+	}
+
+#canvas{
+	height: 400px;
+	width: 400px;
+	background-color: white;
+}
+
+.letter {
+	text-align: center;
+	width: 20px;
+	height: 18px;
+	float: left;
+	padding-top: 2px;
+	z-index: 2;
+}
+
+#sopa{
+	width: 400px;
+	height: 400px;
+}
+
+.lateral {
+	height: 250px;
+}
