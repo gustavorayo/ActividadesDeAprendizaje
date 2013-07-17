@@ -1,7 +1,8 @@
-     body {
+   body {
         padding-top: 60px;
         padding-bottom: 40px;
       }
+
 	footer{
 		text-align:center;
 	}
@@ -31,5 +32,14 @@
 }
 
 .lateral {
-	height: 250px;
+	height: 275px;
+}
+
+.imagen {
+	position: relative;
+	float: left;
+}
+
+.descripcion {
+	padding-bottom: 3px;
 }
