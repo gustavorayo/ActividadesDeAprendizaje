@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Puzzles</title>
+
+        <!-- styles -->
+        <link href="style/style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css">
+
+        <!-- scripts -->
+        <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="script/puzzle.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
+    </head>
+    <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="brand" href="index.html">Actividades de Aprendizaje</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Actividades <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="emparejamiento.html">Emparejamiento</a></li>
+                                <li><a href="seleccionMultiple.html">Selección Múltiple</a></li>
+                                <li><a href="seleccionUnica.html">Verdadero o Falso</a></li>
+                                <li><a href="sopa.html">Sopa de Letras</a></li>
+                                <li><a href="puzzle.html">Rompecabezas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Acerca de..</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-unit">
+        <p class="lead">Instrucciones</p>
+
+        <ul>
+            <li>Observar la figura (al inicio aparecerá ordenada).</li>
+            <li>Dar clic en el boton desordenar.</li>
+            <li>Dar clic en la ficha que se desea mover, junto al especio en blanco.</li>
+            <li>Si desea ordenar nuevamente los elementos puede dar clic en la opción de ordenar.</li>
+        </ul>
+    </div>
+
+        <div id="puzzle_area"></div>
+
+
+    <div class="form-actions grupobotones">
+        <a class="btn btn-primary" id="btndesordenar">Desordenar</a>
+        <a class="btn btn-success" id="btnordenar">Ordenar</a>
+    </div>
+
+    </body>
+</html>
