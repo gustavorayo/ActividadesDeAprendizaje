@@ -68,3 +68,25 @@ footer{
     margin: 20px auto;
     position: relative;
 }
+
+.busy{
+
+}
+
+.borde{
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #333;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.selected{
+    background-color: red;
+}
+
+.found{
+    background-color: green;
+    
+}
