@@ -80,10 +80,11 @@ footer{
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .selected{
-    background-color: red;
+    background-color: lightblue;
 }
 
 .found{
@@ -97,4 +98,9 @@ footer{
 #palabras{
     height: 400px;
     width: 200px;
+}
+
+#reiniciar{
+    width: 100px;
+    margin-left: 50px;
 }

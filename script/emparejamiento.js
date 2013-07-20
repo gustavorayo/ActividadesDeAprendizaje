@@ -94,7 +94,8 @@ function draw(objetos){
             var x = mousePos.x ;
             var y = mousePos.y ;
             if(isShapeSelected==true){
-              tempObject.attrs.fill='black';
+              tempObject.attrs.fill="black";
+              tempObject.attrs.fontSize=16;
               isShapeSelected=false;
               isFirstLine=true;
               if(isFirstLine==false){
@@ -104,7 +105,9 @@ function draw(objetos){
             }else{
               pStart=mousePos;
               tempObject=this;
-              this.attrs.fill='yellow';
+              tempObject.attrs.fill='Darkblue';
+              this.attrs.fontSize=25;
+              //this.attrs.stroke='yellowgreen';
               isShapeSelected=true;
               isFirstLine=true;
             }
@@ -132,6 +135,7 @@ function draw(objetos){
           this.off('mousedown');
           this.attrs.stroke='blue';
           tempObject.attrs.fill='blue';
+          tempObject.attrs.fontSize=16;
           isShapeSelected=false;
           isFirstLine=true;
           line={};
@@ -218,7 +222,7 @@ function setShapes(objetos){
         fontFamily: 'Calibri',
         fill: 'black',
         height:size,
-        width:size,
+        width:size*2,
         id:objetos[i].id
       });
 
