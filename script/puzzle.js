@@ -46,6 +46,10 @@ $(document).ready(function() {
                 Mover(this, tamanio_cuadro);
             });
 
+            $("#tablero").children('div').mouseup(function() {
+                Validar();
+            });
+
             $('#btndesordenar').click(function() {
                 Desordenar();
             });
@@ -90,6 +94,7 @@ $(document).ready(function() {
                 $('#tablero').children("div:nth-child(" + CuadroVacio + ")").css('top', newy);
             });
         }
+
     }
 
 
@@ -144,7 +149,19 @@ $(document).ready(function() {
 
 
     function Validar() {
-        //Coming Soon
+
+
+//        console.log($('#'+15).css('left'));
+//        console.log(diccionarioMedidas[15]['left']);
+//
+//        if ($('#'+15).css('left') === diccionarioMedidas[15]['left'] + 'px' && $('#'+15).css('top') === diccionarioMedidas[15]['top'] + 'px')
+//        {
+//
+//                window.alert("Haz ganado :)");
+//
+//
+//        }
+
     }
 
 
