@@ -88,5 +88,13 @@ footer{
 
 .found{
     background-color: green;
-    
+}
+
+.crossed{
+    text-decoration: line-through;
+}
+
+#palabras{
+    height: 400px;
+    width: 200px;
 }

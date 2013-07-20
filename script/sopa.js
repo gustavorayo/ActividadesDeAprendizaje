@@ -1,87 +1,11 @@
 $(function(){//codigo que se ejecuta cuando la pagiana ha cargado.
-    var isSelected=false;
-    var startPosition=0;
-    var endPosition=0;
 
     var palabras=["CLASE","ACTOR","ASOCIACION","METODO","PAQUETE","ROLE","GENERALIZACION","INCLUDE","EXTEND","NOTACION","DIAGRAMA","SECUENCIA","ESTADO"];
-
-    for(i=0;i<palabras.length;i++){
-      $("#palabras").append('<div idPalabra="'+i+'">'+ palabras[i]+'</div>');
-    }
-
+    iniciar(palabras);
     $("#reiniciar").click(function(){
-      rellenar(palabras);
+      iniciar(palabras);
     });
 
-    rellenar(palabras);
-
-    $(".letter").bind('click',function(){
-
-      if(isSelected==false){
-      $('div').removeClass('selected');
-      $(this).addClass('selected')
-      startPosition=parseInt($(this).attr('id'));
-      isSelected=true;
-    }else{
-      endPosition=parseInt($(this).attr('id'));
-
-         if(startPosition>endPosition)
-        {
-          var tmp=endPosition;
-          endPosition=startPosition;
-          startPosition=tmp;
-        }
-
-      $(this).addClass('selected');
-      var d=direccion(startPosition,endPosition);
-      if(d==1){
-          var p="";
-        for(i=startPosition;i<=endPosition;i++){
-            var letter=$('#'+i).text();
-            p=p+letter;
-        }
-        if(existe(p)|| existe(p.split("").reverse().join(""))){
-          for(i=startPosition;i<=endPosition;i++){
-              var id='#'+i;
-              $(id).addClass('found');
-          }
-        }else{
-          $('div').removeClass('selected');
-          alert("la palabra seleccionada no esta en la lista");
-
-        }
-      }else if(d==2){
-              var p="";
-            for(i=startPosition;i<=endPosition;i=i+20){
-                var letter=$('#'+i).text();
-                p=p+letter;
-            }
-
-          if(existe(p)|| existe(p.split("").reverse().join(""))){
-              for(i=startPosition;i<=endPosition;i=i+20){
-                var id='#'+i;
-                $(id).addClass('found');
-              }
-            }else{
-            $('div').removeClass('selected');
-            alert("la palabra seleccionada no esta en la lista");
-            
-            }
-        
-      }else{
-        // $.msgBox({
-        //     title:"Error",
-        //     type:"Error",
-        //     content:"Las palabras solo pueden estar en horizontal y vertical"
-        // });
-          $('div').removeClass('selected');
-          alert("Las palabras solo pueden estar en horizontal y vertical");
-
-      }
-      isSelected=false;
-    }
-      
-    });
   });
 
 
@@ -91,6 +15,10 @@ function rellenar(palabras){
   var MAX=26;
   var MIN=1;
   var cont=0;
+  $("#palabras div").remove();
+    for(i=0;i<palabras.length;i++){
+          $("#palabras").append('<div id="p'+i+'">'+ palabras[i]+'</div>');
+        }
 
   $(".letter").remove();
   for(i=0;i<horizontal;i++){
@@ -277,16 +205,109 @@ function direccion(id1, id2){
   }
 }
 
-function existe(palabra){
-  var divs=$("#palabras div");
-  var palabras=[];
-    $.each(divs, function(index, value) {
-      palabras.push($(value).text());
-    });
-    var resultado=$.inArray(palabra,palabras);
-    if(resultado==-1){
-      return false;
-    }else{
-      return true;
+function existe(palabra,palabras){
+
+  var pInversa=palabra.split("").reverse().join("");
+  var resultado1=$.inArray(palabra,palabras);
+  var resultado2=$.inArray(pInversa,palabras);
+
+    if(resultado1!=-1){
+      return resultado1
+    }else if(resultado2!=-1){
+      return resultado2;
     }
+    else{
+      return -1;
+    }
+  // var divs=$("#palabras div");
+  // var palabras=[];
+  //   $.each(divs, function(index, value) {
+  //     palabras.push($(value).text());
+  //   });
+
+}
+
+
+function iniciar(palabras){
+      var isSelected=false;
+    var startPosition=0;
+    var endPosition=0;
+
+    rellenar(palabras);
+
+    $(".letter").bind('click',function(){
+
+      if(isSelected==false){
+      $('div').removeClass('selected');
+      $(this).addClass('selected')
+      startPosition=parseInt($(this).attr('id'));
+      isSelected=true;
+    }else{
+      endPosition=parseInt($(this).attr('id'));
+
+         if(startPosition>endPosition)
+        {
+          var tmp=endPosition;
+          endPosition=startPosition;
+          startPosition=tmp;
+        }
+
+      $(this).addClass('selected');
+      var d=direccion(startPosition,endPosition);
+      if(d==1){
+          var p="";
+        for(i=startPosition;i<=endPosition;i++){
+            var letter=$('#'+i).text();
+            p=p+letter;
+        }
+
+        var posicionP=existe(p,palabras);
+
+        if(posicionP!=-1){
+          $("#p"+posicionP).addClass("crossed");
+          for(i=startPosition;i<=endPosition;i++){
+              var id='#'+i;
+              $(id).addClass('found');
+          }
+        }else{
+          $('div').removeClass('selected');
+          alert("la palabra seleccionada no esta en la lista");
+
+        }
+      }else if(d==2){
+              var p="";
+            for(i=startPosition;i<=endPosition;i=i+20){
+                var letter=$('#'+i).text();
+                p=p+letter;
+            }
+
+        var posicionP=existe(p,palabras);
+
+          if(posicionP!=-1){
+            $("#p"+posicionP).addClass("crossed");
+              for(i=startPosition;i<=endPosition;i=i+20){
+                var id='#'+i;
+                $(id).addClass('found');
+              }
+            }else{
+            $('div').removeClass('selected');
+            alert("la palabra seleccionada no esta en la lista");
+            
+            }
+        
+      }else{
+        // $.msgBox({
+        //     title:"Error",
+        //     type:"Error",
+        //     content:"Las palabras solo pueden estar en horizontal y vertical"
+        // });
+          $('div').removeClass('selected');
+          alert("Las palabras solo pueden estar en horizontal y vertical");
+
+      }
+      isSelected=false;
+    }
+      
+    });
+
 }
