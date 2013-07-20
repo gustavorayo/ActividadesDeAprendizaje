@@ -2,22 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61079c49-345b-4d70-ade9-8fd54f97f4c3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/acercade.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/seleccionMultiple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/seleccionUnica.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/union.png" afterPath="$PROJECT_DIR$/imagenes/union.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/puzzle.js" afterPath="$PROJECT_DIR$/script/puzzle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/style.css" afterPath="$PROJECT_DIR$/style/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ActividadesDeAprendizaje.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="61079c49-345b-4d70-ade9-8fd54f97f4c3" time="1374275991142" ignored="false" />
+    <file path="/Dummy.txt" changelist="61079c49-345b-4d70-ade9-8fd54f97f4c3" time="1374329875388" ignored="false" />
     <file path="/puzzle.js" changelist="61079c49-345b-4d70-ade9-8fd54f97f4c3" time="1374287998137" ignored="false" />
     <file path="/puzzle.html" changelist="61079c49-345b-4d70-ade9-8fd54f97f4c3" time="1374173186630" ignored="false" />
     <file path="/style.css" changelist="61079c49-345b-4d70-ade9-8fd54f97f4c3" time="1374286462001" ignored="false" />
-    <file path="/index.html" changelist="61079c49-345b-4d70-ade9-8fd54f97f4c3" time="1374284642945" ignored="false" />
+    <file path="/index.html" changelist="61079c49-345b-4d70-ade9-8fd54f97f4c3" time="1374333825268" ignored="false" />
     <file path="/acercade.html" changelist="61079c49-345b-4d70-ade9-8fd54f97f4c3" time="1374284693246" ignored="false" />
     <file path="/seleccionMultiple.html" changelist="61079c49-345b-4d70-ade9-8fd54f97f4c3" time="1374285597375" ignored="false" />
     <file path="/seleccionUnica.html" changelist="61079c49-345b-4d70-ade9-8fd54f97f4c3" time="1374286623913" ignored="false" />
@@ -40,10 +34,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="5852" vertical-scroll-proportion="-0.0">
+            <state line="111" column="204" selection-start="9414" selection-end="9414" vertical-scroll-proportion="0.5992908">
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -54,7 +48,7 @@
       <file leaf-file-name="acercade.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/acercade.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="16" selection-start="1880" selection-end="1880" vertical-scroll-proportion="-19.041666">
+            <state line="44" column="16" selection-start="1880" selection-end="1880" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -63,7 +57,7 @@
       <file leaf-file-name="seleccionMultiple.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/seleccionMultiple.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="68" selection-start="1972" selection-end="1972" vertical-scroll-proportion="-6.5416665">
+            <state line="47" column="68" selection-start="1972" selection-end="1972" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -72,16 +66,16 @@
       <file leaf-file-name="seleccionUnica.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/seleccionUnica.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="36" selection-start="2520" selection-end="2520" vertical-scroll-proportion="-14.75">
+            <state line="57" column="36" selection-start="2520" selection-end="2520" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="puzzle.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="puzzle.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script/puzzle.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="153" column="0" selection-start="4250" selection-end="4577" vertical-scroll-proportion="0.41326532">
+            <state line="153" column="0" selection-start="4250" selection-end="4577" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -116,12 +110,12 @@
       <list>
         <option value="$PROJECT_DIR$/READMe.md" />
         <option value="$PROJECT_DIR$/puzzle.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/acercade.html" />
         <option value="$PROJECT_DIR$/seleccionMultiple.html" />
         <option value="$PROJECT_DIR$/style/style.css" />
         <option value="$PROJECT_DIR$/seleccionUnica.html" />
         <option value="$PROJECT_DIR$/script/puzzle.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -157,6 +151,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -219,7 +214,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -358,9 +352,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/puzzle.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="38" selection-start="2312" selection-end="2312" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="55" column="38" selection-start="2312" selection-end="2312" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -403,30 +395,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/puzzle.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="38" selection-start="313" selection-end="313" vertical-scroll-proportion="-0.6897747">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="5852" vertical-scroll-proportion="-0.0">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
+        <state line="10" column="38" selection-start="313" selection-end="313" vertical-scroll-proportion="-0.6897747" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/acercade.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="16" selection-start="1880" selection-end="1880" vertical-scroll-proportion="-19.041666">
+        <state line="44" column="16" selection-start="1880" selection-end="1880" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/seleccionMultiple.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="68" selection-start="1972" selection-end="1972" vertical-scroll-proportion="-6.5416665">
+        <state line="47" column="68" selection-start="1972" selection-end="1972" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -440,15 +421,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/seleccionUnica.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="36" selection-start="2520" selection-end="2520" vertical-scroll-proportion="-14.75">
+        <state line="57" column="36" selection-start="2520" selection-end="2520" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/script/puzzle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="0" selection-start="4250" selection-end="4577" vertical-scroll-proportion="0.41326532">
+        <state line="153" column="0" selection-start="4250" selection-end="4577" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="204" selection-start="9414" selection-end="9414" vertical-scroll-proportion="0.5992908">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -57,7 +57,99 @@
    <p align="justify">UML es un lenguaje gráfico que sirve para modelar, diseñar, estructurar, visualizar, especificar, construir y documentar software. UML proporciona un vocabulario común para toda la cadena de producción, desde quien recaba los requisitos de los usuarios, hasta el último programador responsable del mantenimiento. Es un lenguaje estándar para crear los planos de un sistema de forma completa y no ambigua. Fue creado por el Object Management Group, OMG, un consorcio internacional sin ánimo de lucro, que asienta estándares en el área de computación distribuida orientada a objetos, y actualmente revisa y actualiza periódicamente las especificaciones del lenguaje, para adaptarlo a las necesidades que surgen. El prestigio de este consorcio es un aval más para UML, considerando que cuenta con socios tan conocidos como la NASA, la Agencia Europea del Espacio ESA, el Instituto Europeo de Bioinformática EBI, Boeing, Borland, Motorla y el W3C, por mencionar algunos.</p>
 
 
- <h3>Conceptos Básicos</h3>
+ <h3>Bloques Básicos</h3>
+
+    <!--<img src="imagenes/logo_uml.png" align="left" width="250px" height="250px">-->
+
+    <p align="justify"><strong>Los elementos</strong> son abstracciones que actúan como unidades básicas de construcción. Hay cuatro tipos, los estructurales, los de comportamiento, los de agrupación y los de notación. En cuanto a los elementos estructurales son las partes estáticas de los modelos y representan aspectos conceptuales o materiales. Los elementos de comportamiento son las partes dinámicas de los modelos y representan comportamientos en el tiempo y en el espacio. Los elementos de agrupación son las partes organizativas de UML, establecen las divisiones en que se puede fraccionar un modelo. Sólo hay un elemento de agrupación, el paquete, que se emplea para organizar otros elementos en grupos. Los elementos de notación son las partes explicativas de UML, comentarios que pueden describir textualmente cualquier aspecto de un modelo. Sólo hay un elemento de notación principal, la nota.</p>
+
+   <p align="justify"><strong>Las relaciones</strong> son abstracciones que actúan como unión entre los distintos elementos. Hay cuatro tipos, la dependencia, la asociación, la generalización y la realización.</p>
+
+
+    <p align="justify"><strong>Los diagramas</strong> son la disposición de un conjunto de elementos, que representan el sistema modelado desde diferentes perspectivas. UML tiene nueve diagramas fundamentales, agrupados en dos grandes grupos, uno para modelar la estructura estática del sistema y otro para modelar el comportamiento dinámico. Los diagramas estáticos son: el de clases, de objetos, de componentes y de despliegue. Los diagramas de comportamiento son: el de Casos de Uso, de secuencia, de colaboración, de estados y de actividades.</p>
+
+<h3>Elementos</h3>
+
+    <p class="lead">Elementos estructurales.</p>
+
+    <div class="tabbable">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#pane1" data-toggle="tab">Clase</a></li>
+            <li><a href="#pane2" data-toggle="tab">Clase Activa</a></li>
+            <li><a href="#pane3" data-toggle="tab">Interfaz</a></li>
+            <li><a href="#pane4" data-toggle="tab">Colaboración</a></li>
+            <li><a href="#pane5" data-toggle="tab">Caso de Uso</a></li>
+            <li><a href="#pane6" data-toggle="tab">Componente</a></li>
+            <li><a href="#pane7" data-toggle="tab">Nodo</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="pane1" class="tab-pane active">
+                <img src="https://lh4.googleusercontent.com/PNEDnGc9f2x7V0A7xu_PBfkin3FDgQ5FP8PDiLF14aRtUSIiDlZXeAHVfcl5EXTEWeTZCnRlxzDyfDOxeGmD_N9f89Oc1AiHT3xEounuWn_iIF2h14AeYFLO6M6RmrpPEA" align="right" >
+                <p>Describe un conjunto de objetos que comparten los mismos atributos, métodos, relaciones y semántica. Las clases implementan una o más interfaces.</p>
+            </div>
+            <div id="pane2" class="tab-pane">
+                <img src="https://lh4.googleusercontent.com/T4hn_abMEXWgIyf0jT7lzyjpMuOMPUiQbHFC4YvNF0j1QXkkVKcQdm-Wsb_rf69gjx-HruYnHogj7xledFI__vEz4KMd4k7CprcGWE86g3TxVyiSsRXACP9zvdKJM-waEQ" align="right">
+         <p>Se trata de una clase, en la que existe procesos o hilos de ejecución concurrentes con otros elementos. Las líneas del contorno son más gruesas que en la clase “normal”</p>
+            </div>
+            <div id="pane3" class="tab-pane">
+                <img src="https://lh6.googleusercontent.com/eqCFTzijGXEeiyjZdvMhF7jhklzFcjbwYtZ0RoV1BV9nV1cs6xDbeUCMbGO2V_a-e1REes0W0I3eeBCsskVGpYZeJ24kAeFZSL79t_kHiXGg1xFaBp4qSFN7EseesbjPOQ" align="right">
+               <p>Agrupación de métodos u operaciones que especifican un servicio de una clase o componente, describiendo su comportamiento, completo o parcial, externamente visible. UML permite emplear un círculo  para representar las interfaces, aunque lo más normal es emplear la clase con el nombre en cursiva.</p>
+            </div>
+            <div id="pane4" class="tab-pane">
+                <img src="https://lh5.googleusercontent.com/EPA94rqiRLfnPm9EiWOxlMiQ9q1XJz1L3-S7-PAe0vVDvN0EF8_pPCBR_tN3891j3GyrJYkwL0mQfrkFS8U0nsyxpsTmOSy2Xo7aB0qUC4ZGn2l1D3mkQMB4WWzuAwHCqQ" align="right">
+                <p>Define una interacción entre elementos que cooperan para proporcionar un comportamiento mayor que la suma de los comportamientos de sus elementos.</p>
+            </div>
+            <div id="pane5" class="tab-pane">
+                <img src="https://lh6.googleusercontent.com/RHMrEmkD_I1uQ2jEtU5kcfKKPWCBVnW735k9bB_G9bW8E5356ZyuDxzhY6uKS2l1y5lwGocUgu5ULktsEuGJMGrWu9QuYNEg-ivIwmR7lxRy61mtJ5Qg5_szicQGm2mqOQ" align="right">
+                <p>Describe un conjunto de secuencias de acciones que un sistema ejecuta, para producir un resultado observable de interés. Se emplea para estructurar los aspectos de comportamiento de un modelo.
+                </p>
+            </div>
+            <div id="pane6" class="tab-pane">
+                <img src="https://lh5.googleusercontent.com/BlnICX1bUQpHz4YkdHvuu4oczjUd2cmj8La8RM3xSoIaRcD0v9B4F_B7xdmJpnF8Q_IWk6NFzhPu4ckK_YPIDmpB6RuCXng39VRLgkXYxZDD1KdL4ogiJXaIJ-nDDF3AnA" align="right">
+                <p>Parte física y por tanto reemplazable de un modelo, que agrupa un conjunto de interfaces, archivos de código fuente, clases, colaboraciones y proporciona la implementación de dichos elementos.</p>
+            </div>
+            <div id="pane7" class="tab-pane">
+                <img src="https://lh3.googleusercontent.com/GCwY6eHbcK9ZiPJZUPhY6p41gf7KR4Iy41P8AirLNT3dhTz7evlesuhhC_saY6aB6QuOQdgCjkS49lTwalHCN6VIePChC1he0kaL1A0er1RqSO0N3bVN34fRg8tDnS5x6g" align="right">
+                <p>Elemento físico que existe en tiempo de ejecución y representa un recurso computacional con capacidad de procesar.</p>
+            </div>
+        </div><!-- /.tab-content -->
+    </div><!-- /.tabbable -->
+
+    <p class="lead">Elementos de Comportamiento.</p>
+
+    <div class="tabbable tabs-left">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#comp1" data-toggle="tab">Interacción</a></li>
+            <li><a href="#comp2" data-toggle="tab">Máquinas de Estado</a></li>
+
+        </ul>
+        <div class="tab-content">
+            <div id="comp1" class="tab-pane active">
+                <p>Comprende un conjunto de mensajes que se intercambian entre un conjunto de objetos, para cumplir un objetivo especifico.</p>
+            </div>
+            <div id="comp2" class="tab-pane">
+               <p>Especifica la secuencia de estados por los que pasa un objeto o una interacción, en respuesta a eventos.</p>
+            </div>
+        </div><!-- /.tab-content -->
+    </div><!-- /.tabbable -->
+
+    <p class="lead">Elementos de Agrupación y Notación.</p>
+
+    <div class="tabbable tabs-left">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#agrp" data-toggle="tab">Paquete</a></li>
+            <li><a href="#agrp2" data-toggle="tab">Nota</a></li>
+
+        </ul>
+        <div class="tab-content">
+            <div id="agrp" class="tab-pane active">
+               <p>Se emplea para organizar otros elementos en grupos.</p>
+            </div>
+            <div id="agrp2" class="tab-pane">
+                <p>Partes explicativa de UML, que puede describir textualmente cualquier aspecto del modelo</p>
+            </div>
+        </div><!-- /.tab-content -->
+    </div><!-- /.tabbable -->
 
 
 </div>
