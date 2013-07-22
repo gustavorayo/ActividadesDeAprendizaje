@@ -142,16 +142,21 @@ function draw(objetos){
           layer.draw();
 
           if(resultado.length==objetos.length){
+            var c=0;
+            var ic=0;
             for(i=0;i<resultado.length;i++){
               //objetos[i].formaTexto.attrs
               var rs=resultado[i];
               if(rs.resultado==true){
                 objetos[rs.id-1].formaTexto.attrs.fill='green';
+                c++;
               }
               else{
                objetos[rs.id-1].formaTexto.attrs.fill='red'; 
+               ic++;
               }
             }
+            alert("Actividad concluida. /n Correctas:"+c+"/nIncorrectas:"+ic);
             layer.draw();
 
           }
