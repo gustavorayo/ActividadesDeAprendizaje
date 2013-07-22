@@ -156,8 +156,9 @@ function draw(objetos){
                ic++;
               }
             }
-            alert("Actividad concluida. Correctas:"+c+" Incorrectas:"+ic);
+            
             layer.draw();
+            alert("Actividad concluida. Correctas:"+c+" Incorrectas:"+ic);
 
           }
         }
