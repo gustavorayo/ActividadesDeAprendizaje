@@ -1,10 +1,5 @@
 $(function(){
 
-  // var objetos= {
-  //   objetosA:[{"id":1,"url":"http://smartuml.sourceforge.net/pics/UseCaseDiagram.jpg","ref":2},{"id":2,"url":null,"ref":1},{"id":3,"url":null,"ref":2},{"id":4,"url":null,"ref":1},{"id":5,"url":null,"ref":2},{"id":6,"url":null,"ref":1}],
-  //   objetosB:[{"id":1,"url":null,"ref":2},{"id":1,"url":null,"ref":1},{"id":1,"url":null,"ref":2},{"id":1,"url":null,"ref":1},{"id":1,"url":null,"ref":2},{"id":1,"url":null,"ref":1}]
-  // };
-
   var objetos=[ {"id":1,"texto":"Caso de Uso","url":"imagenes/componente.png","id1":3},
                 {"id":2,"texto":"Actor","url":"imagenes/caso_uso.png","id1":1},
                 {"id":3,"texto":"Componente","url":"imagenes/clase.png","id1":5},
@@ -158,7 +153,9 @@ function draw(objetos){
             }
             
             layer.draw();
-            alert("Actividad concluida. Correctas:"+c+" Incorrectas:"+ic);
+			var msg="<div><p>Actividad concluida.</p> <p>Correctas:"+c+"</p> <p> Incorrectas:"+ic+"</p></div>";
+			$(msg).dialog({modal:true});
+            //alert("Actividad concluida. Correctas:"+c+" Incorrectas:"+ic);
 
           }
         }

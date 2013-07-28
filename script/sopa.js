@@ -271,7 +271,9 @@ function iniciar(palabras){
           }
         }else{
           $('div').removeClass('selected');
-          alert("la palabra seleccionada no esta en la lista");
+		  var msg="<p>La palabra seleccionada no esta en la lista</p>";
+		  $(msg).dialog({modal:true});
+          //alert("la palabra seleccionada no esta en la lista");
 
         }
       }else if(d==2){
@@ -291,7 +293,9 @@ function iniciar(palabras){
               }
             }else{
             $('div').removeClass('selected');
-            alert("la palabra seleccionada no esta en la lista");
+			var msg="<p>La palabra seleccionada no esta en la lista</p>";
+			$(msg).dialog({modal:true});
+            //alert("la palabra seleccionada no esta en la lista");
             
             }
         
@@ -302,7 +306,9 @@ function iniciar(palabras){
         //     content:"Las palabras solo pueden estar en horizontal y vertical"
         // });
           $('div').removeClass('selected');
-          alert("Las palabras solo pueden estar en horizontal y vertical");
+		  var msg="<p>Las palabras solo pueden estar en forma horizontal o vertical</p>";
+		  $(msg).dialog({modal:true});
+          //alert("Las palabras solo pueden estar en horizontal y vertical");
 
       }
       isSelected=false;
