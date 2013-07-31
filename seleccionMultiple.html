@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style/style.css">
     <script src="http://code.jquery.com/jquery-2.0.3.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
-    <script src="script/script.js"></script>
+    <script src="script/seleccionmultiple.js"></script>
 </head>
 <body>
 <div class="navbar navbar-inverse navbar-fixed-top">
@@ -47,25 +47,55 @@
       <form>
            <legend>Selección Múltiple (Test de conocimientos de UML)</legend>
 
-          <p class="lead">¿Qué es UML?</p>
-          <label class="radio">
-              <input type="radio" name="pregunta1" id="1" value="opcion1">
-              UML es un lenguaje de programación orientado a objetos ampliamente usado en el mundo.
-          </label>
-          <label class="radio">
-              <input type="radio" name="pregunta1" id="2" value="opcion2">
-              UML es un lenguaje de modelado para diseños arquitectonicos...
-          </label>
-          <label class="radio">
-              <input type="radio" name="pregunta1" id="3" value="opcion2">
-              UML es un lenguaje gráfico que sirve para modelar, diseñar, estructurar, visualizar, especificar, construir y documentar software.
-          </label>
+          <div class="pregunta">
+          <p class="lead">UML es:</p>
+          <div><input type="checkbox" value="F">Lenguaje de Programación</div>
+          <div><input type="checkbox" value="V">Lenguaje gráfico</div>
+          <div><input type="checkbox" value="F">Software para realizar modelado</div>
+          <div><input type="checkbox" value="V">Lenguaje de modelado de sistemas</div>
+        </div>
 
+          <div class="pregunta">
+           <p class="lead">Los creadores de UML son:</p>
+           <div><input type="checkbox" value="V"> James Rumbaugh</div>
+           
+           <div><input type="checkbox" value="V"> Ivar Jacobson</div>
+           <div><input type="checkbox" value="F"> Linus Torvalds</div>
+           <div><input type="checkbox" value="F"> Bill Gates</div>
+           <div><input type="checkbox" value="V"> Grady Booch </div>
+            </div>
 
+            <div class="pregunta">
+
+          <p class="lead">¿Cuáles de los siguientes diagramas son parte de UML?</p>
+          <div><input type="checkbox" value="V"> Diagrama de Clase </div>
+          <div><input type="checkbox" value="F">Diagrma de Gantt</div>
+          <div><input type="checkbox" value="V"> Diagrama de Casos de Uso </div>
+          <div><input type="checkbox" value="F"> Diagrama Entidad Relación</div>
+          <div><input type="checkbox" value="V"> Diagrama de Secuencia</div>
+          </div>
+
+          <div class="pregunta">
+          
+          <p class="lead">¿Cuáles diagramas dan una perspectiva estática de un sistema?</p>
+          <div><input type="checkbox" value="V">Diagrama de Clase</div>
+          <div><input type="checkbox" value="F">Diagrama de Secuencia</div>
+          <div><input type="checkbox" value="V">Diagrama de de objetos</div>
+          <div><input type="checkbox" value="F">Diagrama de Actividades</div>
+          <div><input type="checkbox" value="V">Diagrama de componentes</div>
+          </div>
+          <div class="pregunta">
+          <p class="lead">¿Cuáles diagramas  dan una perspectiva dinámica de un sistema?</p>
+          <div><input type="checkbox" value="V">Diagrama de estados</div>
+          <div><input type="checkbox" value="V">Diagrama de Secuencia</div>
+          <div><input type="checkbox" value="F">Diagrama de de objetos</div>
+          <div><input type="checkbox" value="V">Diagrama de Actividades</div>
+          <div><input type="checkbox" value="F">Diagrama de componentes</div>
+          </div>
+          <a id="evaluar" class="btn" href="#">Evaluar</a>
+          <a id="reiniciar" class="btn" href="#">Reiniciar</a>
       </form>
   </div>
-
-
 <footer>
     <hr>
 </footer>
