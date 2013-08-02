@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style/style.css">
     <script src="http://code.jquery.com/jquery-2.0.3.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
-    <script src="script/script.js"></script>
+    <script src="script/seleccionUnica.js"></script>
 </head>
 <body>
 <div class="navbar navbar-inverse navbar-fixed-top">
@@ -47,30 +47,116 @@
     <form>
         <legend>Verdadero o Falso (Test de conocimientos en UML)</legend>
         <raw>
-
-
-
-            <div class="span9"> <p class="preguntasvf">1) UML cuenta con el apoyo de organizaciones y empresas de renombre las cuales lo usan y ayudan a mejorar.</p></div>
-            <div class="span2">
-            <div class="btn-group" data-toggle="buttons-radio">
-                <button type="button" required="required" name="truefalse" id="t1" class="btn btn-info">Verdadero</button>
-                <button type="button" required="required" name="truefalse" id="f1" class="btn btn-info ">Falso</button>
+            <div class="premisa span12">
+                <div class="span8">
+                     <p class="preguntasvf" resultado="verdadero"> UML cuenta con el apoyo de organizaciones y empresas de renombre las cuales lo usan y ayudan a mejorar.</p>
+                </div>
+                <div class="span2">
+                    <div class="btn-group" data-toggle="buttons-radio">
+                        <button type="button" required="required" name="truefalse" class="btn btn-info verdadero">Verdadero</button>
+                        <button type="button" required="required" name="truefalse" class="btn btn-info falso">Falso</button>
+                    </div>
+                </div>
+                <div class="span1 resultado"></div>
             </div>
+
+
+            <div class="premisa span12">
+                <div class="span8"> <p class="preguntasvf " resultado="falso">Un diagram de componentes es un diagrama que muestra la configuraci6n de los nodos de proceso y las instancias de componentes y objetos que residen en ellos.</p></div>
+                <div class="span2">
+                    <div class="btn-group" data-toggle="buttons-radio">
+                        <button type="button" required="required" name="truefalse" id="t1" class="btn btn-info verdadero">Verdadero</button>
+                        <button type="button" required="required" name="truefalse" id="f1" class="btn btn-info falso">Falso</button>
+                    </div>
+                </div>
+                <div class="span1 resultado"></div>
+                <div class="explicacion span11 oculta"> El diagrama que muestra la configuración de los nodos de proceso y las instancias de componentes y objetos que residen en ellos se les llama diagrama de despliegue</div>
+                
             </div>
 
-            <div class="span9"> <p class="preguntasvf">2) UML facilita las labores de mantenimiento y extensibilidad del software.</p></div>
-            <div class="span2">
-                <div class="btn-group" data-toggle="buttons-radio">
-                    <button type="button" required="required" name="truefalse" id="t2" class="btn btn-info">Verdadero</button>
-                    <button type="button" required="required" name="truefalse" id="f2" class="btn btn-info ">Falso</button>
+            <div class="premisa span12">
+                <div class="span8"> <p class="preguntasvf " resultado="verdadero">UML facilita las labores de mantenimiento y extensibilidad del software.</p></div>
+                <div class="span2">
+                    <div class="btn-group" data-toggle="buttons-radio">
+                        <button type="button" required="required" name="truefalse" id="t2" class="btn btn-info verdadero">Verdadero</button>
+                        <button type="button" required="required" name="truefalse" id="f2" class="btn btn-info falso">Falso</button>
+                    </div>
+                </div>
+                <div class="span1 resultado"></div>
+            </div>
+
+            <div class="premisa span12">
+                <div class="span8"> <p class="preguntasvf " resultado="verdadero"> Un caso de uso describe una interaccion con los actores como secuencia de mensajes entre el sistema y uno o mas actores.</p></div>
+                <div class="span2">
+                    <div class="btn-group" data-toggle="buttons-radio">
+                        <button type="button" required="required" name="truefalse" id="t3" class="btn btn-info verdadero">Verdadero</button>
+                        <button type="button" required="required" name="truefalse" id="f4" class="btn btn-info falso">Falso</button>
+                    </div>
+                </div>
+                <div class="span1 resultado"></div>
+            </div>
+
+            <div class="premisa span12">
+                <div class="span8"> <p class="preguntasvf " resultado="falso"> Un diagrama de clase es un diagrama que muestra interacciones organizadas alrededor de los roles.</p></div>
+                
+                <div class="span2">
+                    <div class="btn-group" data-toggle="buttons-radio">
+                        <button type="button" required="required" name="truefalse" id="t3" class="btn btn-info verdadero">Verdadero</button>
+                        <button type="button" required="required" name="truefalse" id="f4" class="btn btn-info falso">Falso</button>
+
+                    </div>
+                </div>
+                <div class="span1 resultado"></div>
+                <div class="explicacion span11 oculta"> <p>El diagrama que muestra interacciones organizadas alrededor de los roles se le conoce como diagrama de colaboración.
+                    Un diagrama de clases es una presentación gráfica de la vista estática, que muestra una colección de elementos declarativos (estáiticos) del modelo, como clases, tipos, y sus contenidos y relaciones</p>
                 </div>
             </div>
 
+            <div class="premisa span12">
+                <div class="span8"> <p class="preguntasvf " resultado="falso"> La relación de asociación relaciona descripciones generales de los clasificadores padre (superclases) con clasificadores hijos especializados (subclases).</p>
+                </div>
+
+                <div class="span2">
+                    <div class="btn-group" data-toggle="buttons-radio">
+                        <button type="button" required="required" name="truefalse" id="t3" class="btn btn-info verdadero">Verdadero</button>
+                        <button type="button" required="required" name="truefalse" id="f4" class="btn btn-info falso">Falso</button>
+                    </div>
+                </div>
+                <div class="span1 resultado"></div>
+                <div class="explicacion span11 oculta">
+                    <p>La relación de asociacion describe conexiones semanticas entre los objetos individuales de clases dadas.</p>
+                </div>
+            </div>
+
+            <div class="premisa span12">
+                <div class="span8"> <p class="preguntasvf " resultado="verdadero"> Un actor es una idealización dc una persona externa, de un proceso o de una cosa que interactua con un sistema, un subsistema o una clase.</p></div>
+                <div class="span2">
+                    <div class="btn-group" data-toggle="buttons-radio">
+                        <button type="button" required="required" name="truefalse" id="t3" class="btn btn-info verdadero">Verdadero</button>
+                        <button type="button" required="required" name="truefalse" id="f4" class="btn btn-info falso">Falso</button>
+                    </div>
+                </div>
+                <div class="span1 resultado"></div>
+            </div>
+
+            <div class="premisa span12">
+                <div class="span8"> <p class="preguntasvf " resultado="verdadero"> A este diagrama se le conoce como diagrama de Actividades.</p>
+                    <img src="imagenes/DiagramaActividades.png">
+                </div>
+                <div class="span2">
+                    <div class="btn-group" data-toggle="buttons-radio">
+                        <button type="button" required="required" name="truefalse" id="t3" class="btn btn-info verdadero">Verdadero</button>
+                        <button type="button" required="required" name="truefalse" id="f4" class="btn btn-info falso">Falso</button>
+                    </div>
+                </div>
+                <div class="span1 resultado"></div>
+            </div>
+            <div class="span12 pagination-centered">
+            <button type="button"   id="btnEvaluar" class="btn btn-info">Evaluar</button>
+            <button type="button"   id="btnReiniciar" class="btn btn-info">Reiniciar</button>
+            <div>
         </raw>
-
-
-
-
+        
 
     </form>
 </div>

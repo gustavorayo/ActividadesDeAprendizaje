@@ -121,3 +121,23 @@ footer{
     line-height: 25px;
 }
 
+.explicacion{
+    color: green;
+    margin-top: -10px;
+    margin-left: 60px;
+}
+
+.oculta{
+    display: none;   
+}
+
+.vferror{
+    background-color: rgb(255, 160, 122);
+}
+
+.right{
+
+}
+.wring{
+    
+}
